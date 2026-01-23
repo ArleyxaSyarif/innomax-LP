@@ -2329,6 +2329,28 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+        (function($) {
+            "use strict";
+            $(document).ready(function() {
+                // Smooth scrolling using jQuery
+                $('a[href^="#"]').on('click', function(e) {
+                    var target = this.hash;
+                    // Prevent default anchor click behavior
+                    if (target) {
+                        e.preventDefault();
+                        var $target = $(target);
+                        if ($target.length) {
+                             $('html, body').stop().animate({
+                                scrollTop: $target.offset().top - 80 // Adjust offset for sticky header
+                            }, 1000, 'easeInOutExpo'); // You can change 'easeInOutExpo' to 'swing' if needed
+                        }
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+
 </body>
 
 </html>
