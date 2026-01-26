@@ -785,38 +785,131 @@
             </section>
             <!-- blog section end -->
 
-            <!-- faq section start  -->
-            <section id="faq" class="faq pt-150 pb-115" data-bg-color="#f4f5fc">
+            <!-- faq section start -->
+            <section id="faq" class="faq-modern-section">
                 <div class="container">
-                    <div class="da-sec-titlte text-center mb-30">
-                        <h2 class="title">Your Questions, Answered!</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="da-left-faq">
-                                <div class="xb-faq xb-faq-two da-faq">
-                                    <ul class="accordion_box clearfix list-unstyled">
-                                        <li class="accordion block">
-                                            <div class="acc-btn">
-                                                <span class="number">1</span>
-                                                What services does Innomax offer?
-                                                <span class="arrow"></span>
-                                            </div>
-                                            <div class="acc_body">
-                                                <div class="content">
-                                                    <p>Data integration, AI-powered insights, predictive analytics, and
-                                                        business intelligence.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                    <div class="faq-modern-grid">
+
+                        <!-- Sidebar (Left) -->
+                        <div class="faq-sidebar">
+                            <div class="faq-header">
+                                <span class="faq-badge">SUPPORT</span>
+                                <h1 class="faq-title">Common Questions</h1>
+                                <p class="faq-desc">
+                                    Everything you need to know about the product and billing. Can’t find the answer
+                                    you’re looking for?
+                                </p>
+                            </div>
+
+                            <div class="faq-contact-card">
+                                <div class="faq-avatars">
+                                    <img class="faq-avatar-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXCAQyCha7hzfiVE8pwRynZ3nBvRYfmmS6WrpSyewlfLgKVG8pWpXi2c6bD6D4zgZyXaBs53c1S4PSDw0zN9Ihjqf9fo2B7-CVfQrweLn306e2_Y-pIFSGZt6fVKmk-hJZGC4bPVum9epPmmkIak3bsJFU99hEI8nsAV2geHZBcUnQAIGAoJ7ZRrnSSxRGU6MK42WGwWoP9On6LDAsWuy-r2_p7YQAAm0c3P8_xpDmVnmGm1KWNNV7F1XpultVrr8HQ0CB8KYm7erR"
+                                        alt="Support Agent">
+                                    <img class="faq-avatar-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoJAUI6JqIDGZxaUQpZmL1Xir8xKGLnbUn_Ei2hGwkC2SFExe6jENARtK0cNY75iKX635nt0SmRGLIL1gVo1Ljas2DLwTt_RmV0rZV-1CRGkyIBcR1Vhiy97ZRoF2jWkDq_tvohPS-EsNNLw-s3M0OxC3lOIDZ9M_pAaeD07NrxKLD41ELbogLYpdXHYPf-E5o3FSCjjNfrORvtVxJEFWe263gZp-EE0TMTur16UfaTzeDX8ZNkyRxCk8RtEEUzkoobxa4H7qYC09d"
+                                        alt="Support Agent">
+                                    <img class="faq-avatar-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MbgujndE4v2Yi71ogaVLvc2EbZBQ5mLCMxThFM5Y2lGJ25ZSoMaa7PL6R3fFXzCoJaeR1m8SolcVYe9PhmQm2llbb_JGnCKHMlT393v6K1mVdIjh9NmrUiiffXVQMqrXIczJecKw54b_qId3AOoeeA4mRR0e8nfV-Ths0fECpBnrmmouL-pAdh1CdL0TifwuCrlppHDlObxRufQrR59Z6ZOSKCE1RuaOcIptgtjMVgTyqx8z6WDHTDsFfGWlRHyN31JwwUK0zzBs"
+                                        alt="Support Agent">
                                 </div>
+                                <div class="faq-contact-text">
+                                    <h5>Still have questions?</h5>
+                                    <p>Chat with our friendly team.</p>
+                                </div>
+                                <button class="faq-btn">
+                                    <span>Contact Support</span>
+                                    <i class="far fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Accordion (Right) -->
+                        <div class="faq-list">
+                            <!-- Item 1 -->
+                            <div class="faq-item active">
+                                <button class="faq-trigger" onclick="toggleFaq(this)">
+                                    <span class="faq-number">1</span>
+                                    <div class="faq-content-wrap">
+                                        <h3 class="faq-question">What services does Innomax offer?</h3>
+                                        <div class="faq-answer">
+                                            <p>We specialize in data integration, AI-powered insights, predictive
+                                                analytics, and comprehensive business intelligence solutions tailored to
+                                                scale with your enterprise needs.</p>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-chevron-down faq-icon"></i>
+                                </button>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="faq-item">
+                                <button class="faq-trigger" onclick="toggleFaq(this)">
+                                    <span class="faq-number">2</span>
+                                    <div class="faq-content-wrap">
+                                        <h3 class="faq-question">Can I cancel my subscription at any time?</h3>
+                                        <div class="faq-answer">
+                                            <p>Yes, absolutely. You can cancel your subscription at any time from your
+                                                account settings. Your access will continue until the end of your
+                                                current billing period.</p>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-chevron-down faq-icon"></i>
+                                </button>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="faq-item">
+                                <button class="faq-trigger" onclick="toggleFaq(this)">
+                                    <span class="faq-number">3</span>
+                                    <div class="faq-content-wrap">
+                                        <h3 class="faq-question">How is my data secured?</h3>
+                                        <div class="faq-answer">
+                                            <p>We employ enterprise-grade encryption for data at rest and in transit.
+                                                Our infrastructure is SOC 2 Type II certified and we conduct regular
+                                                third-party security audits.</p>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-chevron-down faq-icon"></i>
+                                </button>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="faq-item">
+                                <button class="faq-trigger" onclick="toggleFaq(this)">
+                                    <span class="faq-number">4</span>
+                                    <div class="faq-content-wrap">
+                                        <h3 class="faq-question">Do you offer custom integrations?</h3>
+                                        <div class="faq-answer">
+                                            <p>Yes! Our Enterprise plan includes custom API development and dedicated
+                                                engineering support to ensure seamless integration with your existing
+                                                tech stack.</p>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-chevron-down faq-icon"></i>
+                                </button>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="faq-item">
+                                <button class="faq-trigger" onclick="toggleFaq(this)">
+                                    <span class="faq-number">5</span>
+                                    <div class="faq-content-wrap">
+                                        <h3 class="faq-question">Is there a free trial available?</h3>
+                                        <div class="faq-answer">
+                                            <p>We offer a 14-day free trial on our Pro and Business plans. No credit
+                                                card is required to start, and you get full access to all features
+                                                during the trial period.</p>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-chevron-down faq-icon"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- faq section end  -->
+            <!-- faq section end -->
 
         </main>
         <!-- main area end  -->
