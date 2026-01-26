@@ -22377,3 +22377,115 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     position: relative;
     z-index: 999;
 }
+/* --- Redesigned Brand Section --- */
+.brand-section {
+    padding: 100px 0;
+    background-color: #f4f5fc;
+    overflow: hidden;
+    position: relative;
+}
+
+.brand-section::before,
+.brand-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.brand-section::before {
+    left: 0;
+    background: linear-gradient(to right, #f4f5fc, transparent);
+}
+
+.brand-section::after {
+    right: 0;
+    background: linear-gradient(to left, #f4f5fc, transparent);
+}
+
+.brand-title-wrap {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.brand-marquee-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.brand-marquee-row {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.brand-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    /* padding-left to ensure smooth start? No, just loop. */
+}
+
+/* Animations */
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+    /* We will duplicate content so -50% is the loop point */
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.scroll-left .brand-track {
+    animation: scrollLeft 40s linear infinite;
+}
+
+.scroll-right .brand-track {
+    animation: scrollRight 40s linear infinite;
+}
+
+.brand-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 100px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.brand-card img {
+    max-width: 120px;
+    max-height: 60px;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.4s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: #fff;
+    box-shadow: 0 15px 30px rgba(3, 107, 176, 0.15);
+    border-color: #036AAD;
+}
+
+.brand-card:hover img {
+    filter: grayscale(0%) opacity(1);
+}
+
+/* Pause on hover */
+.brand-marquee-row:hover .brand-track {
+    animation-play-state: paused;
+}
