@@ -11907,6 +11907,61 @@ body[data-aos-easing=ease] [data-aos] {
   .team-item .xb-item--inner {
     padding: 18px 20px 17px;
   }
+
+}
+
+/* 
+-------------------------------------------------------------------------
+   USER PROVIDED SERVICE CARD STYLES
+-------------------------------------------------------------------------
+*/
+
+/* Styling Kartu */
+.service-card-custom {
+  background: #fff;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  /* Shadow tipis */
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.service-card-custom:hover {
+  transform: translateY(-10px);
+}
+
+/* Styling Ikon */
+.icon-box {
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.icon-box img {
+  width: 60px;
+  /* Sesuaikan ukuran ikon */
+  height: auto;
+}
+
+/* Styling Teks */
+.service-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.service-text {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Penyesuaian Header */
+.dream-title-wrap .title {
+  color: #111;
 }
 
 .team-item .xb-item--avatar {
@@ -13439,11 +13494,48 @@ body[data-aos-easing=ease] [data-aos] {
   }
 }
 
+/* End of media query */
+
+
+/* 
+-------------------------------------------------------------------------
+   RESPONSIVE HERO BACKGROUND STYLES
+-------------------------------------------------------------------------
+*/
+
+.hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  /* Anchor to bottom for "building" focus or center */
+}
+
 @media (max-width: 767px) {
-  .hd-cta_shape .shape--two {
-    top: auto;
-    max-width: 140px;
-    bottom: 4%;
+  .hero-bg-image {
+    object-position: center center;
+    /* Center on mobile to capture the main subject */
+    height: 100%;
+    /* Ensure it covers full height of section */
+  }
+
+  /* Override global theme hiding rule */
+  .hero-style-six .xb-shape.hero-bg-wrapper {
+    display: block !important;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
