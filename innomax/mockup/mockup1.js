@@ -23,3 +23,19 @@ function toggleFaq(button) {
         content.style.maxHeight = null;
     }
 }
+
+/* --- Case Study Grid Slider --- */
+var csGridSlider = new Swiper(".cs-grid-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    speed: 600,
+    loop: true,
+    navigation: {
+        nextEl: ".project-next",
+        prevEl: ".project-prev",
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    }
+});
