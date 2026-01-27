@@ -23709,8 +23709,10 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 /* --- Fixed Sinekra Logo (Header & Mobile) --- */
 .sinekra-logo {
-    max-height: 40px;
-    width: auto;
+    /* Gunakan clamp agar ukuran menyesuaikan layar secara otomatis */
+    /* Minimal 80px, idealnya 10% lebar layar, maksimal 120px */
+    width: clamp(80px, 10vw, 120px);
+    height: auto;
     display: block;
 }
 
