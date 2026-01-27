@@ -23473,7 +23473,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 /* Container (max-w-7xl mx-auto px-6) */
 .footer-content-container {
-    max-width: 98%; /* near full */
+    max-width: 98%;
+    /* near full */
     margin: 0 auto;
     padding: 0 24px;
     /* px-6 */
@@ -23704,4 +23705,26 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     color: #036AAD;
     /* hover:text-primary */
     transform: scale(1.1);
+}
+
+/* --- Fixed Sinekra Logo (Header & Mobile) --- */
+.sinekra-logo {
+    max-height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Ensure header logo container doesn't force multiple images if markup reverts */
+.header-logo img {
+    margin: 0;
+}
+
+/* --- Ensure Sinekra Logo is visible in Sticky Header --- */
+.stricked-menu .sinekra-logo,
+.stricky-fixed .sinekra-logo {
+    display: block !important;
+    max-height: 40px !important;
+    width: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
