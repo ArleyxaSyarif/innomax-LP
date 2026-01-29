@@ -9672,6 +9672,7 @@ body[data-aos-easing=ease] [data-aos] {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
