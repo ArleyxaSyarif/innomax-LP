@@ -8796,37 +8796,6 @@ body[data-aos-easing=ease] [data-aos] {
   .da-service-item.active {
     width: 100%;
   }
-
-  /* Mobile adjustments for content inside service item */
-  .da-service-item {
-    padding: 30px 25px;
-    border-radius: 12px;
-  }
-
-  .da-service-item .xb-item--title {
-    font-size: 20px;
-    line-height: 1.3;
-    margin: 20px 0 15px;
-    width: 100%;
-  }
-
-  .da-service-item .xb-item--content {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .da-service-item .xb-item--icon {
-    min-height: 50px;
-  }
-
-  .da-service-item .xb-item--icon img {
-    max-width: 40px;
-  }
-
-  /* Adjust button margin in service section */
-  .service .xb-btn.mt-55 {
-    margin-top: 30px;
-  }
 }
 
 .da-service-item.active .xb-item--arrow {
@@ -9887,27 +9856,6 @@ body[data-aos-easing=ease] [data-aos] {
   }
 }
 
-@media (max-width: 767px) {
-  .da-feature-item {
-    padding: 30px 20px;
-    margin-bottom: 20px;
-    border-radius: 10px !important;
-  }
-
-  .fea-col:nth-child(1) .da-feature-item,
-  .fea-col:nth-child(2) .da-feature-item,
-  .fea-col:nth-child(3) .da-feature-item,
-  .fea-col:nth-child(4) .da-feature-item {
-    margin: 0 0 20px 0;
-    padding: 30px 20px;
-  }
-
-  .da-feature-item .xb-item--title {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-}
-
 .ap-feature-item {
   max-width: 244px;
 }
@@ -10396,6 +10344,51 @@ body[data-aos-easing=ease] [data-aos] {
 .sa-testimonial-item:hover {
   transform: scale(1.03);
 }
+
+/* ===== Mobile: tombol prev/next pindah ke bawah ===== */
+@media (max-width: 767px) {
+  .da-testimonial-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Fix: Reset slider margins to prevent "mencong" alignment */
+  .da-testimonial-slider {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .da-swiper-btn {
+    position: static !important;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    /* Reset margins on individual buttons */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .da-swiper-btn-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    /* Consistent spacing */
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Optional: View More button spacing */
+  .testimonial .xb-btn.mt-55 {
+    margin-top: 30px;
+  }
+}
+
 
 .sa-tes_button .sa-swiper-btn {
   position: absolute;
@@ -10918,57 +10911,7 @@ body[data-aos-easing=ease] [data-aos] {
 
 @media (max-width: 767px) {
   .da-testimonial {
-    padding: 30px 20px;
-  }
-
-  /* Case Study Mobile Adjustments */
-  .da-testimonial-slider {
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 80px;
-    /* Space for buttons */
-  }
-
-  .da-testimonial-wrap .da-swiper-btn {
-    top: auto;
-    bottom: 0;
-    transform: none;
-    width: 50px;
-    height: 50px;
-  }
-
-  .da-testimonial-wrap .swiper-button-prev {
-    left: calc(50% - 60px);
-    right: auto;
-  }
-
-  .da-testimonial-wrap .swiper-button-next {
-    right: calc(50% - 60px);
-    left: auto;
-  }
-
-  .da-tes-left .xb-item--title {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-
-  .da-tes-left .xb-item--number {
-    font-size: 20px;
-  }
-
-  .da-tes-left {
-    padding-right: 0;
-  }
-
-  .da-tes-right {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-
-  /* Ensure author box fits */
-  .da-tes-right .xb-item--author {
-    margin: 0 auto 20px;
-    max-width: 100%;
+    padding: 30px 25px;
   }
 }
 
