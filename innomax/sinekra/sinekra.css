@@ -11094,8 +11094,12 @@ body[data-aos-easing=ease] [data-aos] {
   }
 }
 
+.quote-wrapper.ul_li {
+  align-items: stretch;
+}
+
 .da-quote {
-  width: 59.1%;
+  width: 50%;
   background: #1438bc;
   padding: 80px 100px 80px 120px;
   min-height: 645px;
@@ -11172,7 +11176,7 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .da-cta {
-  width: 40.9%;
+  width: 50%;
   min-height: 645px;
   background: #53baff;
   padding: 0 80px;
