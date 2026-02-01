@@ -11097,7 +11097,7 @@ body[data-aos-easing=ease] [data-aos] {
 .da-quote {
   width: 59.1%;
   background: #1438bc;
-  padding: 93px 165px 100px 240px;
+  padding: 80px 100px 80px 120px;
   min-height: 645px;
 }
 
@@ -11122,6 +11122,7 @@ body[data-aos-easing=ease] [data-aos] {
 @media (max-width: 767px) {
   .da-quote {
     width: 100%;
+    padding: 40px 20px;
   }
 }
 
@@ -11174,7 +11175,7 @@ body[data-aos-easing=ease] [data-aos] {
   width: 40.9%;
   min-height: 645px;
   background: #53baff;
-  padding: 0 135px;
+  padding: 0 80px;
   display: flex;
   align-items: center;
 }
@@ -11204,6 +11205,15 @@ body[data-aos-easing=ease] [data-aos] {
     min-height: 0;
     padding: 50px 20px;
   }
+
+  .da-cta .xb-item--title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+.da-cta .xb-btn {
+  width: fit-content;
 }
 
 .da-cta .xb-item--title {
