@@ -21822,3 +21822,25 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* Custom layout for testimonial items in Sinekra */
+.da-tes-left .xb-item--holder {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.da-tes-left .xb-item--holder .xb-item--meta {
+  width: 48%;
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .da-tes-left .xb-item--holder {
+    flex-direction: column;
+  }
+
+  .da-tes-left .xb-item--holder .xb-item--meta {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
