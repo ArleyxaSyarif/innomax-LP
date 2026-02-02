@@ -21937,3 +21937,21 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 #service .da-sec-titlte .sub_title img {
   filter: brightness(0) invert(1);
 }
+
+/* Quote Section Profile Image */
+.da-quote .xb-item--author {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #53baff;
+}
+
+.da-quote .xb-item--author img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
