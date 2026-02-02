@@ -21855,8 +21855,16 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
+/* Extend Service background upwards by adjusting padding distribution */
+#feature {
+  padding-bottom: 60px !important;
+  /* Restore some spacing/bg-color below button */
+}
+
 /* Fix service section background moving on card hover */
 #service {
+  padding-top: 60px;
+  /* Reduced since feature now has padding */
   background-image: none !important;
   background-color: #212877 !important;
 }
