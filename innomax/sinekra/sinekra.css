@@ -21873,3 +21873,42 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   min-height: 115px;
   /* Reserve space for 3 lines (accommodating longer titles) */
 }
+
+/* Fix Quote & CTA section layout: same width and same height */
+.quote-wrapper {
+  align-items: stretch !important;
+  /* Force equal height */
+}
+
+.da-quote {
+  width: 50%;
+  padding-left: 100px;
+  /* Reduced from 240px to fit 50% width */
+  padding-right: 100px;
+  /* Reduced from 165px */
+  height: auto;
+  /* Allow stretching */
+  min-height: auto;
+  /* Override any main.css min-height if blocking stretch */
+}
+
+.da-cta {
+  width: 50%;
+  height: auto;
+  /* Allow stretching */
+  min-height: auto;
+}
+
+/* Restore mobile responsiveness for Quote & CTA */
+@media (max-width: 991px) {
+  .da-quote {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .da-cta {
+    width: 100%;
+    padding: 50px 30px;
+  }
+}
