@@ -21857,7 +21857,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 /* Fix service section background moving on card hover */
 #service {
-  background-attachment: fixed;
+  background-image: none !important;
+  background-color: #212877 !important;
 }
 
 /* Standardize text size and layout for service items */
@@ -21911,4 +21912,16 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     width: 100%;
     padding: 50px 30px;
   }
+}
+
+/* Service Section Title Color */
+#service .da-sec-titlte .title,
+#service .da-sec-titlte .content {
+  color: var(--color-white);
+}
+
+#service .da-sec-titlte .sub_title {
+  color: var(--color-white);
+  display: inline-block;
+  margin-top: 20px;
 }
