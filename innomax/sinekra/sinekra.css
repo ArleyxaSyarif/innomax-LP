@@ -21955,3 +21955,71 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   height: 100%;
   object-fit: cover;
 }
+
+.da-quote .xb-item--holder {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.da-quote .xb-item--author {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.da-quote .xb-item--name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.da-quote .xb-item--desig {
+  display: block;
+  /* Forces new line */
+  margin-top: 2px;
+}
+
+.da-quote .xb-item--brand {
+  margin-top: 8px;
+  /* Space between text and logo */
+}
+
+.da-quote .xb-item--brand img {
+  display: block;
+}
+
+/* Resize Header Logo */
+.header-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Resize Footer Logo */
+.xb-footer .xb-item--logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Mobile Layout for Case Study Navigation Buttons */
+@media (max-width: 767px) {
+  .da-testimonial-wrap .da-swiper-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+  .da-testimonial-wrap .da-swiper-btn {
+    position: static;
+    transform: none;
+    margin: 0;
+  }
+
+  .da-testimonial-wrap .swiper-button-prev,
+  .da-testimonial-wrap .swiper-button-next {
+    left: auto;
+    right: auto;
+  }
+}
