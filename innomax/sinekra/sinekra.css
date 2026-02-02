@@ -21933,3 +21933,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   display: inline-block;
   margin-top: 20px;
 }
+
+#service .da-sec-titlte .sub_title img {
+  filter: brightness(0) invert(1);
+}
