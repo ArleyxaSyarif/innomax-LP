@@ -77,7 +77,7 @@
                                             <div class="xb-menu-close xb-hide-xl xb-close"></div>
                                             <div class="xb-logo-mobile xb-hide-xl">
                                                 <a href="../index.html" rel="home"><img
-                                                        src="../assets/img/logo/logo06_dark.svg" alt=""></a>
+                                                        src="../assets/img/logo/sinekrabiru.png" alt=""></a>
                                             </div>
                                             <div class="xb-header-mobile-search xb-hide-xl">
                                                 <form role="search" action="#">
@@ -805,6 +805,17 @@
     <script src="../assets/js/jquery.marquee.min.js"></script>
     <script src="../assets/js/jquery.magnific-popup.min.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        // Auto-close mobile menu on link click within sinekra.html
+        $(document).ready(function () {
+            $('.xb-header-nav a').on('click', function () {
+                $('.xb-header-menu').removeClass('active');
+                $('.xb-nav-mobile').removeClass('active');
+                $('.xb-header-menu-backdrop').removeClass('active');
+                $('body').removeClass('body-overflow');
+            });
+        });
+    </script>
 
 </body>
 
